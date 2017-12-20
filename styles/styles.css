@@ -1,0 +1,50 @@
+@font-face {
+    font-family: main-font;
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: main-font-bold;
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+* {
+    font-family: main-font;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar > .navbar__list {
+    /* remove list marker */
+    list-style-type: none;
+    /* margin reset */
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+}
+
+.navbar > .navbar__list > .navbar__item {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.navbar > .navbar__list > .navbar__item a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(231, 192, 17);
+    background-color: grey;
+}
+
+.navbar > .navbar__list > .navbar__item--active a {
+    font-family: main-font-bold;
+    color: rgb(49, 49, 49);
+}
+
+.navbar > .navbar__list > .navbar__item a:hover {
+    font-family: main-font-bold;
+    color: rgb(196, 45, 45);
+}
