@@ -1,0 +1,5 @@
+# Specific support documents
+*.pdf
+
+# OS files
+.DS_Store
