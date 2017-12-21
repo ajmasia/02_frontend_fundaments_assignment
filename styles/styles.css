@@ -1,28 +1,34 @@
 @font-face {
-    font-family: main-font;
+    font-family: main;
     src: url('../fonts/OpenSans-Regular.ttf');
 }
 
-@font-face {
-    font-family: main-font-bold;
-    src: url('../fonts/OpenSans-Bold.ttf');
-}
-
-* {
-    font-family: main-font;
-}
-
 body {
+    font-family: main;
     padding: 0;
     margin: 0;
 }
 
-.navbar > .navbar__list {
-    /* remove list marker */
-    list-style-type: none;
-    /* margin reset */
-    margin: 0;
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
+    background-color: #FFD961;
+    opacity: .8;
+}
+
+.navbar > .navbar__list {
+    float: right;
+    list-style-type: none;
+    margin: 0 20px 0 0;
     font-size: 0;
 }
 
@@ -33,18 +39,74 @@ body {
 
 .navbar > .navbar__list > .navbar__item a {
     display: inline-block;
-    padding: 20px;
+    margin: 30px 20px;
     text-decoration: none;
-    color: rgb(231, 192, 17);
-    background-color: grey;
+    color: rgb(161, 161, 161);
+    font-size: .9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
 }
 
 .navbar > .navbar__list > .navbar__item--active a {
-    font-family: main-font-bold;
-    color: rgb(49, 49, 49);
+    color: #0a0a0a;
+    
 }
 
 .navbar > .navbar__list > .navbar__item a:hover {
-    font-family: main-font-bold;
-    color: rgb(196, 45, 45);
+    color: #0a0a0a;
+}
+
+.navbar > .navbar__list > .navbar__item a:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #0a0a0a;
+    width: 100%;
+    height: 2px;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.navbar > .navbar__list > .navbar__item a:hover:before {
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+.navbar > .navbar__list > .navbar__item--active a:before {
+    color: black;
+    transform:translateY(20px);
+    opacity:1;
+    
+}
+
+.main-header {
+    height: 200px;
+}
+
+.about-me {
+    height: 200px;
+}
+
+.education {
+    height: 200px;
+}
+
+.profesional-experience {
+    height: 200px;
+}
+
+.skills {
+    height: 200px;
+}
+
+.contact {
+    height: 200px;
+}
+
+.footer {
+    height: 30px;
 }
