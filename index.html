@@ -114,9 +114,50 @@
         <section id="contact" class="section-main-content__contact">
             <div class="row">
                 <header class="section-header col-12">
-                    <h2>Comencemos a trabajar juntos</h2>
+                    <h2>Comencemos a construir algo nuevo</h2>
                     <p>Ponte en contacto conmigo y te daré más información</p>
                 </header>
+                <div class="contact-form col-12">
+                    <form name="contact" method="GET">
+                        
+                        <div class="contact-form__row">
+                            <input type="text" name="name" placeholder="Nombre">
+                        </div>
+                        
+                        <div class="contact-form__row">
+                            <input type="email" name="email" placeholder="email">
+                        </div>
+                        
+                        <div class="contact-form__row">
+                            <input type="tel" name="phone" placeholder="Telédono">
+                        </div>
+                        
+                        <div class="contact-form__row">
+                            <input type="text" name="message" placeholder="Mensaje">
+                        </div>
+                        
+                        <div class="contact-form">
+                            
+                            <label for="contact-by-01">KeepCoding</label>
+                            <input type="radio" id="contact-by-01" name="contact-by" value="KeepCoding">
+                            
+                            <label for="contact-by-02">Internet</label>
+                            <input type="radio" id="contact-by-02" name="contact-by" value="Internet">
+                            
+                            <label for="contact-by-03">Internet</label>
+                            <input type="radio" id="contact-by-03" name="contact-by" value="Redes sociales">
+
+                            <label for="contact-by-03">Alguíen me hablo de tí</label>
+                            <input type="radio" id="contact-by-04" name="contact-by" value="Alguíen me hablo de tí">
+
+                        </div>
+                        
+                        <div class="contact-form__row">
+                            <button type="submit" id="enviar">Enviar</button>
+                        </div>
+
+                    </form>
+                </div>
             </div>
         </section>
 
