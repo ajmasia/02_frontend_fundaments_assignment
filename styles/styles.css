@@ -5,9 +5,23 @@
 
 body {
     font-family: main;
+    color: rgb(73, 73, 73);
     padding: 0;
     margin: 0;
 }
+
+h1 {
+    font-size: 3.25rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
 
 .clearfix:after {
     content: " ";
@@ -23,6 +37,7 @@ body {
     width: 100%;
     background-color: #FFD961;
     opacity: .8;
+    z-index: 1;
 }
 
 .navbar > .navbar__list {
@@ -83,30 +98,55 @@ body {
     
 }
 
-.main-header {
-    height: 200px;
+.main-header > .main-header__image {
+    background-image: url('../images/Imagen_Portada_AJMA_20171220_1.0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
 }
 
-.about-me {
-    height: 200px;
+.main-header > .main-header__title-box {
+    position: absolute;
+    width: 95%;
+    left: 0;
+    top: 48%;
 }
 
-.education {
-    height: 200px;
+.main-header > .main-header__title-box > h1 {
+    margin: 12px 0;
+    text-align: right;
 }
 
-.profesional-experience {
-    height: 200px;
+.main-header > .main-header__title-box > p {
+    margin: 12px 0;
+    font-size: 1.2rem;
+    text-align: right;
 }
 
-.skills {
-    height: 200px;
+.section-header {
+    text-align: center;
+    text-transform: uppercase;
 }
 
-.contact {
-    height: 200px;
+.section-header p {
+    text-align: center;
+    text-transform: none;
+    margin-top: 10px;
 }
 
-.footer {
-    height: 30px;
+
+.education > .education__logo img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.education > .education__title h3 {
+    text-align: center;
+}
+
+.education > .education_info p {
+    text-align: center
 }

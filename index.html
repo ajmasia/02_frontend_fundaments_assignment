@@ -5,53 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/grid.css">
     <title>Sobre Antonio José Masiá</title>
 </head>
 <body>
     <!-- navbar -->
     <nav class="navbar clearfix">
         <ul class="navbar__list">
-            <li class="navbar__item navbar__item--active"><a href="#">Home</a></li>
-            <li class="navbar__item"><a href="#">Sobre mi</a></li>
-            <li class="navbar__item"><a href="#">Formación</a></li>
-            <li class="navbar__item"><a href="#">Experiencia</a></li>
-            <li class="navbar__item"><a href="#">Habilidades</a></li>
-            <li class="navbar__item"><a href="#">Contacto</a></li>
+            <li class="navbar__item navbar__item--active"><a href="#home">Home</a></li>
+            <li class="navbar__item"><a href="#about-me">Sobre mi</a></li>
+            <li class="navbar__item"><a href="#education">Formación</a></li>
+            <li class="navbar__item"><a href="#experience">Experiencia</a></li>
+            <li class="navbar__item"><a href="#skills">Habilidades</a></li>
+            <li class="navbar__item"><a href="#contact">Contacto</a></li>
             <li class="navbar__item"><a href="#">Notas</a></li>
         </ul>
     </nav>
     
     <!-- header -->
-    <header class="main-header">
-        Cabecera de la web
+    <header id="home" class="main-header">
+        
+        <div class="main-header__image"></div>
+        
+        <div class="main-header__title-box">
+            <h1>Antonio José Masiá</h1>
+            <p>Full Stack Web Developer</p>
+        </div>
+    
     </header>
     
     <!-- main content -->
     <main class="main-content">
 
         <!-- about me section -->
-        <section class="about-me">
-            Sección: Sobre mí
+        <section id="about-me" class="section-main-content">
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Quién soy</h2>
+                </header>
+                <article class="bout-me__info col-12">
+                    <p>Curioso, activo y apasionado del aprendizaje. Me gusta afrontar nuevos retos, de ahí que el desarrollo de software me resulte gratificante, ya que cada nuevo proyecto me ofrece una nueva oportunidad de ponerme a prueba y sobre todo aprender cosas diferentes.</p>
+                </article>
+            </div>
+            
         </section>
 
         <!-- education section -->
-        <section class="education">
-            Sección: Educación
+        <section id="education" class="section-main-content">
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Formación</h2>
+                </header>
+                <article class="education col-4">
+                    <figure class="education__logo">
+                            <img src="./images/Logo_KC_FrontendFundamentals_Assignment.png" alt="James Gordon">
+                    </figure>
+                    <header class="education__title">
+                        <h3>KeepCoding</h3>
+                    </header>
+                    <div class="education_info">
+                        <p>Web Startup Engineering Bootcamp</p>
+                    </div>
+                </article>
+                <article class="education col-4">
+                    <figure class="education__logo">
+                        <img src="./images/Logo_UCJC_FrontendFundamentals_Assignment.png" alt="James Gordon">
+                    </figure>
+                    <header class="education__title">
+                        <h3>Universidad Camilo José Cela</h3>
+                    </header>
+                    <div class="education_info">
+                        <p>Grado en Ingeniería de Edificación</p>
+                    </div>
+                </article>
+                <article class="education col-4">
+                    <figure class="education__logo">
+                        <img src="./images/Logo_US_FrontendFundamentals_Assignment.png" alt="James Gordon">
+                    </figure>
+                    <header class="education__title">
+                        <h3>Universidad de Sevilla</h3>
+                    </header>
+                    <div class="education_info">
+                        <p>Arquitectura Técnica</p>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <!-- profesional experience section -->
-        <section class="profesional-experience">
-            Sección: Experiencia profesional
+        <section id="experience" class="section-main-content">
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Experiencia profesional</h2>
+                </header>
+            </div>
         </section>
 
         <!-- skills section -->
-        <section class="skills">
-            Sección: Habilidades
+        <section id="skills" class="section-main-content">
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Habilidades</h2>
+                </header>
+            </div>
         </section>
 
         <!-- contact section -->
-        <section class="contact">
-            Sección: Contacto
+        <section id="contact" class="section-main-content__contact">
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Comencemos a trabajar juntos</h2>
+                    <p>Ponte en contacto conmigo y te daré más información</p>
+                </header>
+            </div>
         </section>
 
     </main>
