@@ -115,7 +115,7 @@ h3 {
 }
 
 .main-header > .main-header__image {
-    background-image: url('../images/Imagen_Portada_AJMA_20171220_1.0.jpg');
+    background-image: url('../images/Imagen_Portada_AJMA_20171222_2.0.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -130,13 +130,13 @@ h3 {
 }
 
 .main-header > .main-header__title-box > h1 {
-    margin: 12px 0;
+    margin: 6px 0;
     text-align: right;
 }
 
 .main-header > .main-header__title-box > p {
-    margin: 12px 0;
-    font-size: 1.2rem;
+    margin: 6px 0;
+    font-size: 1.8rem;
     text-align: right;
 }
 
@@ -180,7 +180,7 @@ h3 {
 }
 
 .contact-form {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .contact-form form {
