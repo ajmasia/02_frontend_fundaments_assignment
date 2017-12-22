@@ -43,7 +43,7 @@
                 <header class="section-header col-12">
                     <h2>Quién soy</h2>
                 </header>
-                <article class="bout-me__info col-12">
+                <article class="about-me-info col-12">
                     <p>Curioso, activo y apasionado del aprendizaje. Me gusta afrontar nuevos retos, de ahí que el desarrollo de software me resulte gratificante, ya que cada nuevo proyecto me ofrece una nueva oportunidad de ponerme a prueba y sobre todo aprender cosas diferentes.</p>
                 </article>
             </div>
@@ -113,46 +113,49 @@
         <!-- contact section -->
         <section id="contact" class="section-main-content__contact">
             <div class="row">
-                <header class="section-header col-12">
-                    <h2>Comencemos a construir algo nuevo</h2>
-                    <p>Ponte en contacto conmigo y te daré más información</p>
+                <header class="section-header section-header--mod col-12">
+                    <h2>Comencemos a construir algo nuevo<br><span style="color: white"> Juntos!</span></h2>
+                    <p>Ponte en contacto conmigo y te contaré cómo puedo aportarte valor</p>
                 </header>
                 <div class="contact-form col-12">
                     <form name="contact" method="GET">
                         
-                        <div class="contact-form__row">
+                        <div class="contact-form-row">
                             <input type="text" name="name" placeholder="Nombre">
                         </div>
                         
-                        <div class="contact-form__row">
+                        <div class="contact-form-row">
                             <input type="email" name="email" placeholder="email">
                         </div>
                         
-                        <div class="contact-form__row">
-                            <input type="tel" name="phone" placeholder="Telédono">
+                        <div class="contact-form-row">
+                            <input type="tel" name="phone" placeholder="Teléfono">
                         </div>
                         
-                        <div class="contact-form__row">
-                            <input type="text" name="message" placeholder="Mensaje">
+                        <div class="contact-form-row">
+                            <textarea name="comments" rows="3" maxlength="200" name="message" placeholder="Mensaje"></textarea>
                         </div>
                         
-                        <div class="contact-form">
+                        <div class="contact-form-row-radio">
                             
-                            <label for="contact-by-01">KeepCoding</label>
+                            <label for="contact-by-01">KeepCoding&copy;</label>
                             <input type="radio" id="contact-by-01" name="contact-by" value="KeepCoding">
                             
                             <label for="contact-by-02">Internet</label>
                             <input type="radio" id="contact-by-02" name="contact-by" value="Internet">
                             
-                            <label for="contact-by-03">Internet</label>
+                            <label for="contact-by-03">Redes socieales</label>
                             <input type="radio" id="contact-by-03" name="contact-by" value="Redes sociales">
 
-                            <label for="contact-by-03">Alguíen me hablo de tí</label>
-                            <input type="radio" id="contact-by-04" name="contact-by" value="Alguíen me hablo de tí">
+                            <label for="contact-by-03">Networking</label>
+                            <input type="radio" id="contact-by-04" name="contact-by" value="Networking">
+
+                            <label for="contact-by-03">Otros medios</label>
+                            <input type="radio" id="contact-by-05" name="contact-by" value="Otros medios">
 
                         </div>
                         
-                        <div class="contact-form__row">
+                        <div class="contact-form-row-button">
                             <button type="submit" id="enviar">Enviar</button>
                         </div>
 
@@ -165,7 +168,12 @@
     
     <!-- footer -->
     <footer class="main-footer">
-        Web desarrollada por Antonio José Masiá bajo Licencia CC 4.0 by SA
+        <div class="row">
+            <div class="main-footer__left col-6">
+                Web desarrollada por Antonio José Masiá bajo Licencia CC 4.0 by SA
+            </div>
+            <div class="main-footer__right col-6"></div>
+        </div>
     </footer>
 
 </body>

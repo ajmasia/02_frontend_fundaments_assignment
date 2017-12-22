@@ -1,19 +1,25 @@
 .main-content {
     width: 100%;
     margin: 0 auto;
-    max-width: 1000px;;
+    max-width: 1000px;
 }
 
 .section-main-content {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 .section-main-content__contact {
-    padding: 80px 0;
-    background-color: #FFD961;
+    padding: 60px 0;
+    background-color: #FCD21D;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
 } 
+
+.section-main-content__contact > div {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
 .row:before, .row:after {
     content: '';
