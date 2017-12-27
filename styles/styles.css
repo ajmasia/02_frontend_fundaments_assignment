@@ -52,7 +52,7 @@ h3 {
     top: 0;
     width: 100%;
     background-color: #FCD21D;
-    opacity: .9;
+    /* opacity: .9; */
     z-index: 1;
 }
 
@@ -75,7 +75,6 @@ h3 {
     color: rgb(161, 161, 161);
     font-size: .9rem;
     text-transform: uppercase;
-    text-decoration: none;
     position: relative;
     text-align: center;
 }
@@ -140,9 +139,17 @@ h3 {
     text-align: right;
 }
 
-.main-header {
-    padding-bottom: 80px;
+.main-header > .main-header__social {
+    position: absolute;
+    width: 95%;
+    left: 0;
+    bottom: 2%;
+    text-align: right;
 }
+
+/* .main-header {
+    padding-bottom: 80px;
+} */
 
 .section-header {
     text-align: center;
@@ -160,9 +167,24 @@ h3 {
     text-transform: uppercase;
 }
 
+
+
+
 .about-me-info p {
     text-align: center;
 }
+
+.about-me-info > .about-me-info__logo img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+
+
 
 .education > .education__logo img {
     width: 100px;
@@ -184,29 +206,29 @@ h3 {
 }
 
 .contact-form form {
-    width: 650px;
+    width: 800px;
     margin: 0 auto;
 }
 
 
 .contact-form-row input {
-    width: 650px;
+    width: 800px;
     height: 50px;
     margin: 10px auto;
     background-color: #FCD21D;
     border: none;
-    border-bottom: 1px solid rgb(185, 185, 185);
+    box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.18);
     font-size: 1rem;
     color: rgb(117, 117, 117);
 }
 
 .contact-form-row textarea {
-    width: 650px;
+    width: 800px;
     height: 70px;
-    margin: 15px auto;
+    margin: 30px auto;
     background-color: #FCD21D;
     border: none;
-    border-bottom: 1px solid rgb(185, 185, 185);
+    box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.18);
     font-size: 1rem;
     color: rgb(117, 117, 117);
 }
@@ -214,6 +236,7 @@ h3 {
 .contact-form-row-radio {
     display: inline-block;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .contact-form-row-radio input[type="radio"] {
@@ -226,18 +249,20 @@ h3 {
 }
 
 .contact-form-row-button {
-    margin: 40px 0px;
+    margin: 20px 0px;
     float: right;
 }
 
 .contact-form-row-button button[type="submit"] {
     background-color: #FCD21D;
-    padding: 1rem 4rem;
-    border: 2px white solid;
-    border-radius: 12px;
+    padding: .8rem 4rem;
+    border: 4px white solid;
+    border-radius: 16px;
     cursor: pointer;
     font-size: 1rem;
     color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
 }
 
 .main-footer {
@@ -246,4 +271,41 @@ h3 {
     color: white;
     background-color: grey;
 
+}
+
+
+.skills__content > ul {
+    padding-left: 0;
+}
+
+.skills > .skills__content {
+    height: 100%;
+    text-align: center;
+}
+
+.skills > .skills__content p {
+    word-spacing: .3rem;
+    text-align: center;
+}
+
+.skills > .skills__title h3 {
+    text-align: center;
+}
+
+.skills > .skills__info p {
+    text-align: center
+}
+
+.skills__list > .skills__item {
+    list-style-type: none;
+} 
+
+.interests__video {
+    text-align: center;
+}
+
+.interests__video video {
+    width: 800px;
+    height: 100%;
+    border: 12px solid white;
 }

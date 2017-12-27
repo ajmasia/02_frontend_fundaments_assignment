@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,88 @@
     <link rel="stylesheet" href="./styles/timeline.css">
     <title>Sobre Antonio José Masiá</title>
 </head>
+
 <body>
     <!-- navbar -->
     <nav class="navbar clearfix">
         <ul class="navbar__list">
-            <li class="navbar__item navbar__item--active"><a href="#home">Home</a></li>
-            <li class="navbar__item"><a href="#about-me">Sobre mi</a></li>
-            <li class="navbar__item"><a href="#education">Formación</a></li>
-            <li class="navbar__item"><a href="#experience">Experiencia</a></li>
-            <li class="navbar__item"><a href="#skills">Habilidades</a></li>
-            <li class="navbar__item"><a href="#contact">Contacto</a></li>
-            <li class="navbar__item"><a href="#">Notas</a></li>
+            <li class="navbar__item navbar__item--active">
+                <a href="#home">Home</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#about-me">Sobre mi</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#education">Formación</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#experience">Experiencia</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#skills">Habilidades</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#interests">Me interesa</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#contact">Contacto</a>
+            </li>
+            <!-- <li class="navbar__item">
+                <a href="#">Notas</a>
+            </li> -->
         </ul>
     </nav>
-    
+
     <!-- header -->
     <header id="home" class="main-header">
-        
+
         <div class="main-header__image"></div>
-        
+
         <div class="main-header__title-box">
             <h1>Antonio José Masiá</h1>
             <p>Full Stack Web Developer</p>
         </div>
-    
+        <div class="main-header__social">
+                <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
+                <img src="./images/iconmonstr-google-plus_494949.png" alt="Facebook">
+                <img src="./images/iconmonstr-instagram_494949.png" alt="Facebook">
+                <img src="./images/iconmonstr-pinterest_494949.png" alt="Facebook">
+                <img src="./images/iconmonstr-linkedin_494949.png" alt="Facebook">
+                <img src="./images/iconmonstr-github_494949.png" alt="Facebook">
+        </div>
+
     </header>
-    
+
     <!-- main content -->
     <main class="main-content">
 
         <!-- about me section -->
-        <section id="about-me" class="section-main-content">
+        <section id="about-me" class="section-main-content__all-width-yellow">
             <div class="row">
                 <header class="section-header col-12">
                     <h2>Quién soy</h2>
                 </header>
-                <article class="about-me-info col-12">
-                    <p>Curioso, activo y apasionado del aprendizaje. Me gusta afrontar nuevos retos, de ahí que el desarrollo de software me resulte gratificante, ya que cada nuevo proyecto me ofrece una nueva oportunidad de ponerme a prueba y sobre todo aprender cosas diferentes.</p>
+                <article class="about-me-info">
+                    <figure class="about-me-info__logo">
+                        <img src="./images/Imagen_Portada_AJMA_20171220_1.0.jpg" alt="Antonio José Masiá">
+                    </figure>
+                    <p>Curioso, activo y apasionado del aprendizaje. Me gusta afrontar nuevos retos, de ahí que el desarrollo
+                        de software me resulte gratificante, ya que cada nuevo proyecto me ofrece una nueva oportunidad de
+                        ponerme a prueba y sobre todo aprender cosas diferentes.</p>
                 </article>
             </div>
-            
+
         </section>
 
         <!-- education section -->
-        <section id="education" class="section-main-content">
+        <section id="education" class="section-main-content__all-width-grey">
             <div class="row">
                 <header class="section-header col-12">
                     <h2>Formación</h2>
                 </header>
                 <article class="education col-4">
                     <figure class="education__logo">
-                            <img src="./images/Logo_KC_FrontendFundamentals_Assignment.png" alt="James Gordon">
+                        <img src="./images/Logo_KC_FrontendFundamentals_Assignment.png" alt="James Gordon">
                     </figure>
                     <header class="education__title">
                         <h3>KeepCoding</h3>
@@ -93,17 +125,6 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-
-
         <!-- profesional experience section -->
         <section id="experience" class="section-main-content">
             <div class="row">
@@ -114,9 +135,9 @@
             <div class="row">
 
                 <div class="timeline">
-            
+
                     <ul class="timeline__list timeline--centered">
-                       
+
                         <li class="timeline__item">
                             <div class="timeline__info">
                                 <span>2017</span>
@@ -125,45 +146,158 @@
                             <div class="timeline__content">
                                 <h3 class="timeline-title">Programador Freelance</h3>
                                 <h4 class="timeline-title">Full Stack Web Developer</h4>
-                                <p>Desarrollo web tanto en frontend como backend con Javascript, Pythom, PHP, Express, Angular y Django, arquitectura de microservicios con REST, Celery, RabbitM y node.js contra, bases de datos MongoDB, PostgreSQL, Redis, ElasticSearch y MySQL.</p>
+                                <p>Desarrollo web tanto en frontend como backend con Javascript, Pythom, PHP, Express, Angular
+                                    y Django, arquitectura de microservicios con REST, Celery, RabbitM y node.js contra,
+                                    bases de datos MongoDB, PostgreSQL, Redis, ElasticSearch y MySQL.</p>
                             </div>
                         </li>
-                        
-                        <li class="timeline__item">
-                                <div class="timeline__info">
-                                    <span>2013 - 2017</span>
-                                </div>
-                                <div class="timeline__marker"></div>
-                                <div class="timeline__content">
-                                        <h3 class="timeline-title">OPTIMA LAB</h3>
-                                        <h4 class="timeline-title">Consultor Artesano en efectividad</h4>
-                                    <p>Ofreciendo sevicios de formación y consultoría basados en las últimas metodologías centradas en las personas, trabajo con organizaciones en mejorar su competitividad de forma sostenible, aumentando la efectividad individual y colectiva de las personas que las integran.</p>
-                                </div>
-                            </li>
 
-                            <li class="timeline__item">
-                                    <div class="timeline__info">
-                                        <span>1999 - 2013</span>
-                                    </div>
-                                    <div class="timeline__marker"></div>
-                                    <div class="timeline__content">
-                                        <h3 class="timeline-title">AGROPENINSULAR SA</h3>
-                                        <h4 class="timeline-title">Director técnico</h4>
-                                        <p>Máximo responsable técnico del grupo empresarial, desempeñando las responsabilidades de gestionar de forma integral proyectos inmobiliarios de edificación y urbanización, así como el asesoramiento técnico de apoyo al área de negocio dentro de la organización.</p>
-                                    </div>
-                                </li>
-                                <li class="timeline__item">
-                                        <div class="timeline__info">
-                                            <span>1998 - 1999</span>
-                                        </div>
-                                        <div class="timeline__marker"></div>
-                                        <div class="timeline__content">
-                                            <h3 class="timeline-title">Arquitectura José Herrera</h3>
-                                            <h4 class="timeline-title">Proyectista y director de ejecución de obras</h4>
-                                            <p>DDesempeñando funciones como proyectista de edificación, a través de cálculos de estructuras e instalaciones, estudios esconómicos, mediciones y presupuestos para proyectose intervenciones técnicas como director de ejución de obras y seguridad y salud,</p>
-                                        </div>
-                                    </li>
+                        <li class="timeline__item">
+                            <div class="timeline__info">
+                                <span>2013 - 2017</span>
+                            </div>
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <h3 class="timeline-title">OPTIMA LAB</h3>
+                                <h4 class="timeline-title">Consultor Artesano en efectividad</h4>
+                                <p>Ofreciendo sevicios de formación y consultoría basados en las últimas metodologías centradas
+                                    en las personas, trabajo con organizaciones en mejorar su competitividad de forma sostenible,
+                                    aumentando la efectividad individual y colectiva de las personas que las integran.</p>
+                            </div>
+                        </li>
+
+                        <li class="timeline__item">
+                            <div class="timeline__info">
+                                <span>1999 - 2013</span>
+                            </div>
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <h3 class="timeline-title">AGROPENINSULAR SA</h3>
+                                <h4 class="timeline-title">Director técnico</h4>
+                                <p>Máximo responsable técnico del grupo empresarial, desempeñando las responsabilidades de gestionar
+                                    de forma integral proyectos inmobiliarios de edificación y urbanización, así como el
+                                    asesoramiento técnico de apoyo al área de negocio dentro de la organización.</p>
+                            </div>
+                        </li>
+                        <li class="timeline__item">
+                            <div class="timeline__info">
+                                <span>1998 - 1999</span>
+                            </div>
+                            <div class="timeline__marker"></div>
+                            <div class="timeline__content">
+                                <h3 class="timeline-title">Arquitectura José Herrera</h3>
+                                <h4 class="timeline-title">Proyectista y director de ejecución de obras</h4>
+                                <p>DDesempeñando funciones como proyectista de edificación, a través de cálculos de estructuras
+                                    e instalaciones, estudios esconómicos, mediciones y presupuestos para proyectose intervenciones
+                                    técnicas como director de ejución de obras y seguridad y salud,</p>
+                            </div>
+                        </li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- skills section -->
+        <section id="skills" class="section-main-content__all-width-grey">
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Habilidades</h2>
+                </header>
+
+                <article class="skills col-4">
+                   <header class="skills__title">
+                        <h3>Profesionales</h3>
+                    </header>
+                    <div class="skills__info">
+                        <p>Web Startup Engineering Bootcamp</p>
+                    </div>
+                    <div class="skills__content">
+                       <ul class="skills__list">
+                           <li class="skills__item">HTML5</li>
+                           <li class="skills__item">CSS3</li>
+                           <li class="skills__item">JavaScript</li>
+                           <li class="skills__item">Mobile & Responsive Design</li>
+                           <li class="skills__item">Node.js</li>
+                           <li class="skills__item">Express</li>
+                           <li class="skills__item">APIs REST</li>
+                           <li class="skills__item">Angular</li>
+                           <li class="skills__item">Python</li>
+                           <li class="skills__item">Django</li>
+                           <li class="skills__item">PHP</li>
+                           <li class="skills__item">MongoDB</li>
+                           <li class="skills__item">PostgreSQL</li>
+                           <li class="skills__item">MySQL</li>
+                           <li class="skills__item">GIT</li>
+                       </ul>
+                    
+                   </div>
+                    
+                </article>
+                
+                <article class="skills col-4">
+                   <header class="skills__title">
+                        <h3>Personales</h3>
+                    </header>
+                    <div class="skills__info">
+                        <p>Web Startup Engineering Bootcamp</p>
+                    </div>
+                    <div class="skills__content">
+                       <ul class="skills__list">
+                            <li class="skills__item">Comunicativo</li>
+                           <li class="skills__item">Dinámico</li>
+                           <li class="skills__item">Emprendedor</li>
+                           <li class="skills__item">Creativo</li>
+                           <li class="skills__item">Organizado</li>
+                           <li class="skills__item">Metódico</li>
+                           <li class="skills__item">Trabajo en equipo</li>
+                       </ul>
+                    
+                   </div>
+                    
+                </article>
+                
+                <article class="skills col-4">
+                   <header class="skills__title">
+                        <h3>Transversales</h3>
+                    </header>
+                    <div class="skills__info">
+                        <p>Web Startup Engineering Bootcamp</p>
+                    </div>
+                    <div class="skills__content">
+                       <ul class="skills__list">
+                           <li class="skills__item">Personal & Team Coaching</li>
+                           <li class="skills__item">Scrum</li>
+                           <li class="skills__item">PNL</li>
+                           <li class="skills__item">GTD&copy;</li>
+                           <li class="skills__item">Inglés B1</li>
+                           <li class="skills__item">Valenciano</li>
+                           <li class="skills__item">Catalán</li>
+                       </ul>
+                    
+                   </div>
+                    
+                </article>
+                
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- interest section -->
+        <section id="interests" class="section-main-content__all-width-yellow--degree">
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Mis intereses</h2>
+                </header>
+                <div class="interests__video">
+                    <video id="video" width="550" height="300" controls>
+                        <source src="./video/batman.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </section>
@@ -174,59 +308,29 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-        <!-- skills section -->
-        <section id="skills" class="section-main-content">
-            <div class="row">
-                <header class="section-header col-12">
-                    <h2>Habilidades</h2>
-                </header>
-            </div>
-        </section>
-
         <!-- contact section -->
-        <section id="contact" class="section-main-content__contact">
+        <section id="contact" class="section-main-content__all-width-yellow">
             <div class="row">
                 <header class="section-header section-header--mod col-12">
-                    <h2>Comencemos a construir algo nuevo<br><span style="color: white"> Juntos!</span></h2>
-                    <p>Ponte en contacto conmigo y te contaré cómo puedo aportarte valor</p>
+                    <h2>Comencemos a construir algo nuevo
+                        <br>
+                        <span style="color: white"> Juntos!</span>
+                    </h2>
+                    <p>Por favor, ponte en contacto conmigo y te contaré cómo puedo aportarte valor</p>
                 </header>
                 <div class="contact-form col-12">
                     <form name="contact" method="GET">
-                        
                         <div class="contact-form-row">
-                            <input type="text" name="name" placeholder="Nombre">
+                            <label>¿Cómo has contactado conmigo?</label>
                         </div>
-                        
-                        <div class="contact-form-row">
-                            <input type="email" name="email" placeholder="email">
-                        </div>
-                        
-                        <div class="contact-form-row">
-                            <input type="tel" name="phone" placeholder="Teléfono">
-                        </div>
-                        
-                        <div class="contact-form-row">
-                            <textarea name="comments" rows="3" maxlength="200" name="message" placeholder="Mensaje"></textarea>
-                        </div>
-                        
                         <div class="contact-form-row-radio">
-                            
+
                             <label for="contact-by-01">KeepCoding&copy;</label>
                             <input type="radio" id="contact-by-01" name="contact-by" value="KeepCoding">
-                            
+
                             <label for="contact-by-02">Internet</label>
                             <input type="radio" id="contact-by-02" name="contact-by" value="Internet">
-                            
+
                             <label for="contact-by-03">Redes socieales</label>
                             <input type="radio" id="contact-by-03" name="contact-by" value="Redes sociales">
 
@@ -237,7 +341,26 @@
                             <input type="radio" id="contact-by-05" name="contact-by" value="Otros medios">
 
                         </div>
+                        <div class="contact-form-row">
+                            <input type="text" name="name" placeholder="Nombre">
+                        </div>
+
+                        <div class="contact-form-row">
+                            <input type="email" name="email" placeholder="email">
+                        </div>
+
+                        <div class="contact-form-row">
+                            <input type="tel" name="phone" placeholder="Teléfono">
+                        </div>
+
+                        <div class="contact-form-row">
+                            <textarea name="comments" rows="3" maxlength="200" name="message" placeholder="Mensaje"></textarea>
+                        </div>
                         
+                        
+
+                        
+
                         <div class="contact-form-row-button">
                             <button type="submit" id="enviar">Enviar</button>
                         </div>
@@ -248,7 +371,7 @@
         </section>
 
     </main>
-    
+
     <!-- footer -->
     <footer class="main-footer">
         <div class="row">
@@ -260,4 +383,5 @@
     </footer>
 
 </body>
+
 </html>
