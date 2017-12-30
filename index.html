@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/timeline.css">
+    <link rel="stylesheet" href="./styles/flexbox.css">
     <title>Sobre Antonio José Masiá</title>
 </head>
 
@@ -52,12 +53,12 @@
             <p>Full Stack Web Developer</p>
         </div>
         <div class="main-header__social">
-                <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
-                <img src="./images/iconmonstr-google-plus_494949.png" alt="Facebook">
-                <img src="./images/iconmonstr-instagram_494949.png" alt="Facebook">
-                <img src="./images/iconmonstr-pinterest_494949.png" alt="Facebook">
-                <img src="./images/iconmonstr-linkedin_494949.png" alt="Facebook">
-                <img src="./images/iconmonstr-github_494949.png" alt="Facebook">
+            <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
+            <img src="./images/iconmonstr-google-plus_494949.png" alt="Facebook">
+            <img src="./images/iconmonstr-instagram_494949.png" alt="Facebook">
+            <img src="./images/iconmonstr-pinterest_494949.png" alt="Facebook">
+            <img src="./images/iconmonstr-linkedin_494949.png" alt="Facebook">
+            <img src="./images/iconmonstr-github_494949.png" alt="Facebook">
         </div>
 
     </header>
@@ -200,86 +201,110 @@
 
         <!-- skills section -->
         <section id="skills" class="section-main-content__all-width-grey">
+
             <div class="row">
                 <header class="section-header col-12">
-                    <h2>Habilidades</h2>
+                    <h2>Habilidades profesionales</h2>
                 </header>
-
-                <article class="skills col-4">
-                   <header class="skills__title">
-                        <h3>Profesionales</h3>
-                    </header>
-                    <div class="skills__info">
-                        <p>Web Startup Engineering Bootcamp</p>
-                    </div>
-                    <div class="skills__content">
-                       <ul class="skills__list">
-                           <li class="skills__item">HTML5</li>
-                           <li class="skills__item">CSS3</li>
-                           <li class="skills__item">JavaScript</li>
-                           <li class="skills__item">Mobile & Responsive Design</li>
-                           <li class="skills__item">Node.js</li>
-                           <li class="skills__item">Express</li>
-                           <li class="skills__item">APIs REST</li>
-                           <li class="skills__item">Angular</li>
-                           <li class="skills__item">Python</li>
-                           <li class="skills__item">Django</li>
-                           <li class="skills__item">PHP</li>
-                           <li class="skills__item">MongoDB</li>
-                           <li class="skills__item">PostgreSQL</li>
-                           <li class="skills__item">MySQL</li>
-                           <li class="skills__item">GIT</li>
-                       </ul>
-                    
-                   </div>
-                    
-                </article>
-                
-                <article class="skills col-4">
-                   <header class="skills__title">
-                        <h3>Personales</h3>
-                    </header>
-                    <div class="skills__info">
-                        <p>Web Startup Engineering Bootcamp</p>
-                    </div>
-                    <div class="skills__content">
-                       <ul class="skills__list">
-                            <li class="skills__item">Comunicativo</li>
-                           <li class="skills__item">Dinámico</li>
-                           <li class="skills__item">Emprendedor</li>
-                           <li class="skills__item">Creativo</li>
-                           <li class="skills__item">Organizado</li>
-                           <li class="skills__item">Metódico</li>
-                           <li class="skills__item">Trabajo en equipo</li>
-                       </ul>
-                    
-                   </div>
-                    
-                </article>
-                
-                <article class="skills col-4">
-                   <header class="skills__title">
-                        <h3>Transversales</h3>
-                    </header>
-                    <div class="skills__info">
-                        <p>Web Startup Engineering Bootcamp</p>
-                    </div>
-                    <div class="skills__content">
-                       <ul class="skills__list">
-                           <li class="skills__item">Personal & Team Coaching</li>
-                           <li class="skills__item">Scrum</li>
-                           <li class="skills__item">PNL</li>
-                           <li class="skills__item">GTD&copy;</li>
-                           <li class="skills__item">Inglés B1</li>
-                           <li class="skills__item">Valenciano</li>
-                           <li class="skills__item">Catalán</li>
-                       </ul>
-                    
-                   </div>
-                    
-                </article>
-                
             </div>
+
+            <div class="flex-row">
+                <div class="skills__info">
+                    <h3>MEAN & Django Web Stacks</h3>
+                </div>
+                <div class="flex-row">
+                    <div class="skills__item">
+                        <figure class="about-me-info__logo">
+                            <img src="./images/Logo_JS_BN_100x100_AJMA_20171230_1.0.png" alt="Javascript">
+                        </figure>
+                    </div>
+                    <div class="skills__item">
+                        <figure class="about-me-info__logo">
+                            <img src="./images/Logo_Python_BN_100_100_AJMA_20171230_1.0.png" alt="Python">
+                        </figure>
+
+                    </div>
+                    <div class="skills__item">
+                        <figure class="about-me-info__logo">
+                            <img src="./images/Logo_ExpressJS_BN_100x100_AJMA_20171230_1.0.png" alt="Express">
+                        </figure>
+                    </div>
+                    <div class="skills__item">
+                        <figure class="about-me-info__logo">
+                            <img src="./images/Logo_Django_BN_100x100_AJMA_20171230_1.0.png" alt="Django">
+                        </figure>
+                    </div>
+                    <div class="skills__item">
+                        <figure class="about-me-info__logo">
+                            <img src="./images/Logo_Angular_BN_100x100_AJMA_20171230_1.0.png" alt="Angular">
+                        </figure>
+                    </div>
+                </div>
+
+
+                <div class="felx-row">
+                    <div class="skills__info">
+                        <div class="skills__info ">
+                            <h3>Microservicios & REST</h3>
+                        </div>
+                    </div>
+
+                    <div class="flex-row">
+                        <div class="skills__item">
+                            <figure class="about-me-info__logo">
+                                <img src="./images/Logo_NodeJS_BN_100x100_AJMA_20171230_1.0.png" alt="Node.js">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="about-me-info__logo">
+                                <img src="./images/Logo_Celery_BN_100_100_AJMA_20171230_1.0.png" alt="Celery">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="about-me-info__logo">
+                                <img src="./images/Logo_RabbitMQBN_100x100_AJMA_20171230_1.0.png" alt="RabbitMQ">
+                            </figure>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>Bases de datos</h3>
+                        </div>
+                    </div>
+
+                    <div class="flex-row">
+                        <div class="skills__item">
+                            <figure class="about-me-info__logo">
+                                <img src="./images/Logo_RedisDB_BN_100x100_AJMA_20171230_1.0.png" alt="Javascript">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="about-me-info__logo">
+                                <img src="./images/Logo_ElasticSearchDB_BN_100x100_AJMA_20171230_1.0.png" alt="Javascript">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="about-me-info__logo">
+                                <img src="./images/Logo_PostgreSQL_BN_100x100_AJMA_20171230_1.0.png" alt="Javascript">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="about-me-info__logo">
+                                <img src="./images/Logo_MongoDB_BN_100_100_AJMA_20171230_1.0.png" alt="Javascript">
+                            </figure>
+                        </div>
+
+
+                    </div>
+            <div class="row">
+                <header class="section-header col-12">
+                    <h2>Habilidades transverales</h2>
+                </header>
+            </div>
+
         </section>
 
 
@@ -290,6 +315,7 @@
 
         <!-- interest section -->
         <section id="interests" class="section-main-content__all-width-yellow--degree">
+
             <div class="row">
                 <header class="section-header col-12">
                     <h2>Mis intereses</h2>
@@ -299,6 +325,7 @@
                         <source src="./video/batman.mp4" type="video/mp4">
                     </video>
                 </div>
+
             </div>
         </section>
 
@@ -356,10 +383,10 @@
                         <div class="contact-form-row">
                             <textarea name="comments" rows="3" maxlength="200" name="message" placeholder="Mensaje"></textarea>
                         </div>
-                        
-                        
 
-                        
+
+
+
 
                         <div class="contact-form-row-button">
                             <button type="submit" id="enviar">Enviar</button>

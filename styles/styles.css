@@ -11,6 +11,7 @@
 * {
     box-sizing: border-box;
 }
+
 *:focus {
     outline: none;
 }
@@ -22,7 +23,9 @@ body {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: headers;
 }
 
@@ -37,7 +40,6 @@ h2 {
 h3 {
     font-size: 1.25rem;
 }
-
 
 .clearfix:after {
     content: " ";
@@ -56,19 +58,19 @@ h3 {
     z-index: 1;
 }
 
-.navbar > .navbar__list {
+.navbar>.navbar__list {
     float: right;
     list-style-type: none;
     margin: 0 20px 0 0;
     font-size: 0;
 }
 
-.navbar > .navbar__list > .navbar__item {
+.navbar>.navbar__list>.navbar__item {
     display: inline-block;
     font-size: 1rem;
 }
 
-.navbar > .navbar__list > .navbar__item a {
+.navbar>.navbar__list>.navbar__item a {
     display: inline-block;
     margin: 30px 20px;
     text-decoration: none;
@@ -79,16 +81,15 @@ h3 {
     text-align: center;
 }
 
-.navbar > .navbar__list > .navbar__item--active a {
-    color: #0a0a0a;
-    
-}
-
-.navbar > .navbar__list > .navbar__item a:hover {
+.navbar>.navbar__list>.navbar__item--active a {
     color: #0a0a0a;
 }
 
-.navbar > .navbar__list > .navbar__item a:before {
+.navbar>.navbar__list>.navbar__item a:hover {
+    color: #0a0a0a;
+}
+
+.navbar>.navbar__list>.navbar__item a:before {
     content: '';
     position: absolute;
     top: 10px;
@@ -101,19 +102,18 @@ h3 {
     transition: .3s ease;
 }
 
-.navbar > .navbar__list > .navbar__item a:hover:before {
+.navbar>.navbar__list>.navbar__item a:hover:before {
     transform: translateY(20px);
     opacity: 1;
 }
 
-.navbar > .navbar__list > .navbar__item--active a:before {
+.navbar>.navbar__list>.navbar__item--active a:before {
     color: black;
-    transform:translateY(20px);
-    opacity:1;
-    
+    transform: translateY(20px);
+    opacity: 1;
 }
 
-.main-header > .main-header__image {
+.main-header>.main-header__image {
     background-image: url('../images/Imagen_Portada_AJMA_20171222_2.0.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -121,31 +121,32 @@ h3 {
     height: 100vh;
 }
 
-.main-header > .main-header__title-box {
+.main-header>.main-header__title-box {
     position: absolute;
     width: 95%;
     left: 0;
     top: 48%;
 }
 
-.main-header > .main-header__title-box > h1 {
+.main-header>.main-header__title-box>h1 {
     margin: 6px 0;
     text-align: right;
 }
 
-.main-header > .main-header__title-box > p {
+.main-header>.main-header__title-box>p {
     margin: 6px 0;
     font-size: 1.8rem;
     text-align: right;
 }
 
-.main-header > .main-header__social {
+.main-header>.main-header__social {
     position: absolute;
     width: 95%;
     left: 0;
     bottom: 2%;
     text-align: right;
 }
+
 
 /* .main-header {
     padding-bottom: 80px;
@@ -162,19 +163,16 @@ h3 {
     margin-top: 30px;
 }
 
-.section-header--mod > h2 {
+.section-header--mod>h2 {
     text-align: center;
     text-transform: uppercase;
 }
-
-
-
 
 .about-me-info p {
     text-align: center;
 }
 
-.about-me-info > .about-me-info__logo img {
+.about-me-info>.about-me-info__logo img {
     width: 250px;
     height: 250px;
     display: block;
@@ -183,21 +181,18 @@ h3 {
     border: 4px solid white;
 }
 
-
-
-
-.education > .education__logo img {
+.education>.education__logo img {
     width: 100px;
     height: 100px;
     display: block;
     margin: auto;
 }
 
-.education > .education__title h3 {
+.education>.education__title h3 {
     text-align: center;
 }
 
-.education > .education_info p {
+.education>.education_info p {
     text-align: center
 }
 
@@ -210,14 +205,13 @@ h3 {
     margin: 0 auto;
 }
 
-
 .contact-form-row input {
     width: 800px;
     height: 50px;
     margin: 10px auto;
     background-color: #FCD21D;
     border: none;
-    box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.18);
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.18);
     font-size: 1rem;
     color: rgb(117, 117, 117);
 }
@@ -228,7 +222,7 @@ h3 {
     margin: 30px auto;
     background-color: #FCD21D;
     border: none;
-    box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.18);
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, 0.18);
     font-size: 1rem;
     color: rgb(117, 117, 117);
 }
@@ -270,35 +264,28 @@ h3 {
     padding: 15px 20px;
     color: white;
     background-color: grey;
+}
+
+/* skills styles*/
+
+.skills__item {
+    width: 130px;
+    height: 130px;
+    border: 3px white solid;
+    border-radius: 14px;
+    margin: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-
-.skills__content > ul {
-    padding-left: 0;
-}
-
-.skills > .skills__content {
-    height: 100%;
-    text-align: center;
-}
-
-.skills > .skills__content p {
-    word-spacing: .3rem;
-    text-align: center;
-}
-
-.skills > .skills__title h3 {
-    text-align: center;
-}
-
-.skills > .skills__info p {
+.skills__info h3 {
     text-align: center
 }
 
-.skills__list > .skills__item {
-    list-style-type: none;
-} 
+
+/* video styles */
 
 .interests__video {
     text-align: center;

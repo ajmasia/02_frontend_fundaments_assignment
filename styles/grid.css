@@ -113,3 +113,7 @@
     float: left;
     width: calc(calc(100% / 12) * 12);
 }
+
+.flex {
+    display: flex;
+}
