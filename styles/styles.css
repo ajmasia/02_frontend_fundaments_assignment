@@ -41,6 +41,23 @@ h3 {
     font-size: 1.25rem;
 }
 
+p {
+    line-height: 1.5rem;
+}
+/* Enlaces */
+
+a {
+    text-decoration: underline;
+    text-decoration-color: #FCD21D;
+    text-underline-position: under;
+    color: #4a4a4a;
+    
+    -webkit-text-decoration-color: #FCD21D;
+    -webkit-text-underline-position: under;
+}
+
+
+
 .clearfix:after {
     content: " ";
     visibility: hidden;
@@ -147,6 +164,10 @@ h3 {
     text-align: right;
 }
 
+.main-header>.main-header__social img {
+    width: 30px;
+}
+
 
 /* .main-header {
     padding-bottom: 80px;
@@ -172,27 +193,27 @@ h3 {
     text-align: center;
 }
 
-.about-me-info>.about-me-info__logo img {
-    width: 250px;
-    height: 250px;
+.about-me-info >.about-me-info__logo img {
+    width: 300px;
+    height: 300px;
     display: block;
     margin: 0 auto 40px;
     border-radius: 50%;
     border: 4px solid white;
 }
 
-.education>.education__logo img {
+.education >.education__logo img {
     width: 100px;
     height: 100px;
     display: block;
     margin: auto;
 }
 
-.education>.education__title h3 {
+.education >.education__title h3 {
     text-align: center;
 }
 
-.education>.education_info p {
+.education >.education_info p {
     text-align: center
 }
 
@@ -261,9 +282,23 @@ h3 {
 
 .main-footer {
     height: 50px;
+    
+    background-color: grey;
+}
+
+.main-footer__left {
     padding: 15px 20px;
     color: white;
-    background-color: grey;
+}
+
+.main-footer__right {
+    
+    padding: 10px 20px 10px 0;
+    text-align: right;
+}
+
+.main-footer__social img {
+    width: 30px;
 }
 
 /* skills styles*/
@@ -280,8 +315,32 @@ h3 {
 
 }
 
+.skills__item-text {
+    
+    border: 3px white solid;
+    border-radius: 14px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
 .skills__info h3 {
-    text-align: center
+    text-align: center;
+    margin: 60px 0 30px;
+}
+
+.skills__info p {
+    text-align: center;
+}
+
+.skills__logo img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
 }
 
 
@@ -295,4 +354,16 @@ h3 {
     width: 800px;
     height: 100%;
     border: 12px solid white;
+}
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration: 0.5s;
+    animation-delay: 0.5s
 }
