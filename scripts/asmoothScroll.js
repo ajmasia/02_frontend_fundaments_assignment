@@ -3,7 +3,7 @@ var html, body;
 window.onload = function () {
     //getting all anchor elements
     var links = document.querySelectorAll('.navbar__list > .navbar__item a')
-    console.log(links);
+    // console.log(links);
 
     //getting html
     html = document.documentElement;
@@ -11,7 +11,7 @@ window.onload = function () {
 
     //getting body
     body = document.body;
-    console.log(body.scrollTop, html.scrollTop);
+    // console.log(body.scrollTop, html.scrollTop);
 
     for (var i = 0; i < links.length; i++) {
         links[i].onclick = function () {

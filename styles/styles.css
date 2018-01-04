@@ -23,9 +23,7 @@ body {
     margin: 0;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-family: headers;
 }
 
@@ -44,7 +42,6 @@ h3 {
 p {
     line-height: 1.5rem;
 }
-/* Enlaces */
 
 a {
     text-decoration: underline;
@@ -56,8 +53,6 @@ a {
     -webkit-text-underline-position: under;
 }
 
-
-
 .clearfix:after {
     content: " ";
     visibility: hidden;
@@ -66,6 +61,7 @@ a {
     clear: both;
 }
 
+/* Navbar styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -130,7 +126,8 @@ a {
     opacity: 1;
 }
 
-.main-header>.main-header__image {
+/* Main header styles */
+.main-header > .main-header__image {
     background-image: url('../images/Imagen_Portada_AJMA_20171222_2.0.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -138,25 +135,31 @@ a {
     height: 100vh;
 }
 
-.main-header>.main-header__title-box {
+.slide-in {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+.main-header > .main-header__title-box {
     position: absolute;
     width: 95%;
     left: 0;
     top: 48%;
 }
 
-.main-header>.main-header__title-box>h1 {
+.main-header > .main-header__title-box>h1 {
     margin: 6px 0;
     text-align: right;
 }
 
-.main-header>.main-header__title-box>p {
+.main-header > .main-header__title-box>p {
     margin: 6px 0;
     font-size: 1.8rem;
     text-align: right;
 }
 
-.main-header>.main-header__social {
+.main-header > .main-header__social {
     position: absolute;
     width: 95%;
     left: 0;
@@ -164,15 +167,11 @@ a {
     text-align: right;
 }
 
-.main-header>.main-header__social img {
+.main-header > .main-header__social img {
     width: 30px;
 }
 
-
-/* .main-header {
-    padding-bottom: 80px;
-} */
-
+/* Sections styles */
 .section-header {
     text-align: center;
     text-transform: uppercase;
@@ -184,7 +183,7 @@ a {
     margin-top: 30px;
 }
 
-.section-header--mod>h2 {
+.section-header--mod > h2 {
     text-align: center;
     text-transform: uppercase;
 }
@@ -193,7 +192,8 @@ a {
     text-align: center;
 }
 
-.about-me-info >.about-me-info__logo img {
+/* About me styles */
+.about-me-info > .about-me-info__logo img {
     width: 300px;
     height: 300px;
     display: block;
@@ -202,21 +202,37 @@ a {
     border: 4px solid white;
 }
 
-.education >.education__logo img {
+.about-me-info__logo.slide-in {
+    transform:translateX(-30%) scale(1);
+}
+
+/* Education styles */
+
+.education.slide-in {
+    transform:translateX(+30%) scale(1);
+}
+
+.education > .education__logo img {
     width: 100px;
     height: 100px;
     display: block;
     margin: auto;
 }
 
-.education >.education__title h3 {
+.education > .education__title h3 {
     text-align: center;
 }
 
-.education >.education_info p {
+.education > .education_info p {
     text-align: center
 }
 
+
+.timeline.slide-in {
+    transform:translateX(+30%) scale(.5);
+}
+
+/* Contact form styles */
 .contact-form {
     margin-top: 30px;
 }
@@ -280,29 +296,32 @@ a {
     font-size: 1.3rem;
 }
 
+/* Main footer styles */
 .main-footer {
     height: 50px;
-    
+    margin: 0;
     background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-footer__left {
-    padding: 15px 20px;
+    padding: 0 20px;
     color: white;
 }
 
 .main-footer__right {
-    
-    padding: 10px 20px 10px 0;
+    padding: 0 20px;
     text-align: right;
 }
 
 .main-footer__social img {
     width: 30px;
+    padding-top: 5px;
 }
 
-/* skills styles*/
-
+/* Skills styles*/
 .skills__item {
     width: 130px;
     height: 130px;
@@ -345,7 +364,6 @@ a {
 
 
 /* video styles */
-
 .interests__video {
     text-align: center;
 }
@@ -356,6 +374,8 @@ a {
     border: 12px solid white;
 }
 
+
+/* animations */
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
 .fade-in {
@@ -366,4 +386,9 @@ a {
 
     animation-duration: 0.5s;
     animation-delay: 0.5s
+}
+
+.slide-in.active {
+    opacity:1;
+    transform:translateX(0%) scale(1);
 }
