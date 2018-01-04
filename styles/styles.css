@@ -229,7 +229,7 @@ a {
 
 
 .timeline.slide-in {
-    transform:translateX(+30%) scale(.5);
+    transform:translateX(-30%) scale(1);
 }
 
 /* Contact form styles */
@@ -322,6 +322,35 @@ a {
 }
 
 /* Skills styles*/
+
+.skills__mean-django.slide-in {
+    transform:translateX(+30%) scale(1);
+}
+
+.skills__api-rest.slide-in {
+    transform:translateX(-30%) scale(1);
+}
+
+.skills__databases.slide-in {
+    transform:translateX(+30%) scale(1);
+}
+
+.skills__responsive.slide-in {
+    transform:translateX(-30%) scale(1);
+}
+
+.skills__agile.slide-in {
+    transform:translateX(+30%) scale(1);
+}
+
+.skills__others.slide-in {
+    transform:translateX(-30%) scale(1);
+}
+
+.skills__personal.slide-in {
+    transform:translateX(+30%) scale(1);
+}
+
 .skills__item {
     width: 130px;
     height: 130px;
@@ -364,6 +393,10 @@ a {
 
 
 /* video styles */
+
+.interests__video.slide-in {
+    transform:translateX(-30%) scale(1);
+}
 .interests__video {
     text-align: center;
 }

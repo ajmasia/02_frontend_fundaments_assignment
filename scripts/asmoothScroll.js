@@ -42,9 +42,9 @@ window.onload = function () {
 };
 
 function scroll(from, to, hash) {
-    var timeInterval = 0.05; //in ms
+    var timeInterval = 1; //in ms
     var prevScrollTop;
-    var increment = to > from ? 10 : -10;
+    var increment = to > from ? 20 : -20;
 
     var scrollByPixel = setInterval(function () {
         //getting current scroll position

@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/timeline.css">
     <link rel="stylesheet" href="./styles/flexbox.css">
+    <script src="./scripts/modernizr-custom.js"></script>
     <title>Sobre Antonio José Masiá</title>
 </head>
 
 <body>
     <!-- navbar -->
     <nav class="navbar clearfix">
+
         <ul class="navbar__list">
             <li class="navbar__item navbar__item--active">
                 <a href="#home">Home</a>
@@ -41,17 +43,19 @@
                 <a href="#">Notas</a>
             </li> -->
         </ul>
+
     </nav>
 
     <!-- header -->
     <header id="home" class="main-header">
 
-        <div class="main-header__image"></div>
+        <div class="main-header__image "></div>
 
         <div class="main-header__title-box">
             <h1>Antonio José Masiá</h1>
             <p>Full Stack Web Developer</p>
         </div>
+
         <div class="main-header__social">
             <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
             <img src="./images/iconmonstr-google-plus_494949.png" alt="Facebook">
@@ -82,9 +86,9 @@
                         <p>Curioso, activo y apasionado del aprendizaje. Me gusta afrontar nuevos retos, de ahí que el desarrollo
                             de software me resulte gratificante, ya que cada nuevo proyecto me ofrece una nueva oportunidad
                             de ponerme a prueba y sobre todo aprender cosas diferentes.</p>
-                        
 
-                            <!-- <p>Creo firmemente que el conocimiento debe estar al alcance de cualquier persona, y por esta razón, me gusta compartir en mi blog personal todo aquello que aprendo.</p>
+
+                        <!-- <p>Creo firmemente que el conocimiento debe estar al alcance de cualquier persona, y por esta razón, me gusta compartir en mi blog personal todo aquello que aprendo.</p>
                             
                             <p>Me encantan los gadgets, cacharrear con ellos y sacarles punta. Sí, ya lo sé, soy un poco friki (no soy perfecto). Siempre llevo un libro a cuestas y cuando puedo, aprovecho para sacarle jugo.</p>
                             
@@ -97,11 +101,13 @@
         <!-- education section -->
         <section id="education" class="section-main-content__all-width-grey section-color">
             <div class="education__container">
+
                 <div class="row">
                     <header class="section-header col-12">
                         <h2>Formación</h2>
                     </header>
                 </div>
+
                 <div class="row">
                     <article class="education col-4 slide-in">
                         <figure class="education__logo">
@@ -114,6 +120,7 @@
                             <p>Web Startup Engineering Bootcamp</p>
                         </div>
                     </article>
+
                     <article class="education col-4 slide-in">
                         <figure class="education__logo">
                             <img src="./images/Logo_UCJC_FrontendFundamentals_Assignment.png" alt="James Gordon">
@@ -125,6 +132,7 @@
                             <p>Grado en Ingeniería de Edificación</p>
                         </div>
                     </article>
+
                     <article class="education col-4 slide-in">
                         <figure class="education__logo">
                             <img src="./images/Logo_US_FrontendFundamentals_Assignment.png" alt="James Gordon">
@@ -142,72 +150,74 @@
 
         <!-- profesional experience section -->
         <section id="experience" class="section-main-content">
-            <div class="row">
-                <header class="section-header col-12">
-                    <h2>Experiencia profesional</h2>
-                </header>
-            </div>
-            <div class="row">
+            <div class="experience__container">
+                <div class="row">
+                    <header class="section-header col-12">
+                        <h2>Experiencia profesional</h2>
+                    </header>
+                </div>
 
-                <div class="timeline col-12 slide-in">
+                <div class="row">
+                    <div class="timeline col-12 slide-in">
+                        <ul class="timeline__list timeline--centered">
 
-                    <ul class="timeline__list timeline--centered">
+                            <li class="timeline__item">
+                                <div class="timeline__info">
+                                    <span>2017</span>
+                                </div>
+                                <div class="timeline__marker"></div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline-title">Programador Freelance</h3>
+                                    <h4 class="timeline-title">Full Stack Web Developer</h4>
+                                    <p>Desarrollo web tanto en frontend como backend con Javascript, Pythom, PHP, Express, Angular
+                                        y Django, arquitectura de microservicios con REST, Celery, RabbitM y node.js contra,
+                                        bases de datos MongoDB, PostgreSQL, Redis, ElasticSearch y MySQL.</p>
+                                </div>
+                            </li>
 
-                        <li class="timeline__item">
-                            <div class="timeline__info">
-                                <span>2017</span>
-                            </div>
-                            <div class="timeline__marker"></div>
-                            <div class="timeline__content">
-                                <h3 class="timeline-title">Programador Freelance</h3>
-                                <h4 class="timeline-title">Full Stack Web Developer</h4>
-                                <p>Desarrollo web tanto en frontend como backend con Javascript, Pythom, PHP, Express, Angular
-                                    y Django, arquitectura de microservicios con REST, Celery, RabbitM y node.js contra,
-                                    bases de datos MongoDB, PostgreSQL, Redis, ElasticSearch y MySQL.</p>
-                            </div>
-                        </li>
+                            <li class="timeline__item">
+                                <div class="timeline__info">
+                                    <span>2013 - 2017</span>
+                                </div>
+                                <div class="timeline__marker"></div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline-title">OPTIMA LAB</h3>
+                                    <h4 class="timeline-title">Consultor Artesano en efectividad</h4>
+                                    <p>Ofreciendo sevicios de formación y consultoría basados en las últimas metodologías centradas
+                                        en las personas, trabajo con organizaciones en mejorar su competitividad de forma
+                                        sostenible, aumentando la efectividad individual y colectiva de las personas que
+                                        las integran.</p>
+                                </div>
+                            </li>
 
-                        <li class="timeline__item">
-                            <div class="timeline__info">
-                                <span>2013 - 2017</span>
-                            </div>
-                            <div class="timeline__marker"></div>
-                            <div class="timeline__content">
-                                <h3 class="timeline-title">OPTIMA LAB</h3>
-                                <h4 class="timeline-title">Consultor Artesano en efectividad</h4>
-                                <p>Ofreciendo sevicios de formación y consultoría basados en las últimas metodologías centradas
-                                    en las personas, trabajo con organizaciones en mejorar su competitividad de forma sostenible,
-                                    aumentando la efectividad individual y colectiva de las personas que las integran.</p>
-                            </div>
-                        </li>
-
-                        <li class="timeline__item">
-                            <div class="timeline__info">
-                                <span>1999 - 2013</span>
-                            </div>
-                            <div class="timeline__marker"></div>
-                            <div class="timeline__content">
-                                <h3 class="timeline-title">AGROPENINSULAR SA</h3>
-                                <h4 class="timeline-title">Director técnico</h4>
-                                <p>Máximo responsable técnico del grupo empresarial, desempeñando las responsabilidades de gestionar
-                                    de forma integral proyectos inmobiliarios de edificación y urbanización, así como el
-                                    asesoramiento técnico de apoyo al área de negocio dentro de la organización.</p>
-                            </div>
-                        </li>
-                        <li class="timeline__item">
-                            <div class="timeline__info">
-                                <span>1998 - 1999</span>
-                            </div>
-                            <div class="timeline__marker"></div>
-                            <div class="timeline__content">
-                                <h3 class="timeline-title">Arquitectura José Herrera</h3>
-                                <h4 class="timeline-title">Proyectista y director de ejecución de obras</h4>
-                                <p>DDesempeñando funciones como proyectista de edificación, a través de cálculos de estructuras
-                                    e instalaciones, estudios esconómicos, mediciones y presupuestos para proyectose intervenciones
-                                    técnicas como director de ejución de obras y seguridad y salud,</p>
-                            </div>
-                        </li>
-                    </ul>
+                            <li class="timeline__item">
+                                <div class="timeline__info">
+                                    <span>1999 - 2013</span>
+                                </div>
+                                <div class="timeline__marker"></div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline-title">AGROPENINSULAR SA</h3>
+                                    <h4 class="timeline-title">Director técnico</h4>
+                                    <p>Máximo responsable técnico del grupo empresarial, desempeñando las responsabilidades
+                                        de gestionar de forma integral proyectos inmobiliarios de edificación y urbanización,
+                                        así como el asesoramiento técnico de apoyo al área de negocio dentro de la organización.</p>
+                                </div>
+                            </li>
+                            <li class="timeline__item">
+                                <div class="timeline__info">
+                                    <span>1998 - 1999</span>
+                                </div>
+                                <div class="timeline__marker"></div>
+                                <div class="timeline__content">
+                                    <h3 class="timeline-title">Arquitectura José Herrera</h3>
+                                    <h4 class="timeline-title">Proyectista y director de ejecución de obras</h4>
+                                    <p>DDesempeñando funciones como proyectista de edificación, a través de cálculos de estructuras
+                                        e instalaciones, estudios esconómicos, mediciones y presupuestos para proyectose
+                                        intervenciones técnicas como director de ejución de obras y seguridad y salud,</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
@@ -222,210 +232,222 @@
                     </header>
                 </div>
 
-                <div class="flex-row">
-                    <div class="skills__info">
-                        <h3>MEAN & Django Web Stacks</h3>
+                <div class="skills__mean-django slide-in">
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>MEAN & Django Web Stacks</h3>
+                        </div>
+                    </div>
+    
+                    <div class="flex-row">
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_JS_BN_100x100_AJMA_20171230_1.0.png" alt="Javascript" title="Javascript">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_Python_BN_100_100_AJMA_20171230_1.0.png" alt="Python">
+                            </figure>
+    
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_ExpressJS_BN_100x100_AJMA_20171230_1.0.png" alt="Express">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_Django_BN_100x100_AJMA_20171230_1.0.png" alt="Django">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_Angular_BN_100x100_AJMA_20171230_1.0.png" alt="Angular">
+                            </figure>
+                        </div>
+    
                     </div>
                 </div>
 
-                <div class="flex-row">
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_JS_BN_100x100_AJMA_20171230_1.0.png" alt="Javascript" title="Javascript">
-                        </figure>
+                <div class="skills__api-rest slide-in">
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>Microservicios & REST</h3>
+                        </div>
                     </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_Python_BN_100_100_AJMA_20171230_1.0.png" alt="Python">
-                        </figure>
-
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_ExpressJS_BN_100x100_AJMA_20171230_1.0.png" alt="Express">
-                        </figure>
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_Django_BN_100x100_AJMA_20171230_1.0.png" alt="Django">
-                        </figure>
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_Angular_BN_100x100_AJMA_20171230_1.0.png" alt="Angular">
-                        </figure>
-                    </div>
-
-                </div>
-
-
-                <div class="flex-row">
-                    <div class="skills__info">
-                        <h3>Microservicios & REST</h3>
+    
+                    <div class="flex-row">
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_NodeJS_BN_100x100_AJMA_20171230_1.0.png" alt="Node.js">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_Celery_BN_100_100_AJMA_20171230_1.0.png" alt="Celery">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_RabbitMQBN_100x100_AJMA_20171230_1.0.png" alt="RabbitMQ">
+                            </figure>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex-row">
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_NodeJS_BN_100x100_AJMA_20171230_1.0.png" alt="Node.js">
-                        </figure>
+                <div class="skills__databases slide-in">
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>Bases de datos</h3>
+                        </div>
                     </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_Celery_BN_100_100_AJMA_20171230_1.0.png" alt="Celery">
-                        </figure>
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_RabbitMQBN_100x100_AJMA_20171230_1.0.png" alt="RabbitMQ">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="flex-row">
-                    <div class="skills__info">
-                        <h3>Bases de datos</h3>
-                    </div>
-                </div>
-
-                <div class="flex-row">
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_RedisDB_BN_100x100_AJMA_20171230_1.0.png" alt="RedisDB">
-                        </figure>
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_ElasticSearchDB_BN_100x100_AJMA_20171230_1.0.png" alt="ElasticSearch">
-                        </figure>
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_PostgreSQL_BN_100x100_AJMA_20171230_1.0.png" alt="PostgreSQL">
-                        </figure>
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_MySQL_BN_100x100_AJMA_20171231_1.0.png" alt="MySQL">
-                        </figure>
-                    </div>
-
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_MongoDB_BN_100_100_AJMA_20171230_1.0.png" alt="MongoDB">
-                        </figure>
+    
+                    <div class="flex-row">
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_RedisDB_BN_100x100_AJMA_20171230_1.0.png" alt="RedisDB">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_ElasticSearchDB_BN_100x100_AJMA_20171230_1.0.png" alt="ElasticSearch">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_PostgreSQL_BN_100x100_AJMA_20171230_1.0.png" alt="PostgreSQL">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_MySQL_BN_100x100_AJMA_20171231_1.0.png" alt="MySQL">
+                            </figure>
+                        </div>
+    
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_MongoDB_BN_100_100_AJMA_20171230_1.0.png" alt="MongoDB">
+                            </figure>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex-row">
-                    <div class="skills__info">
-                        <h3>Responsive frontend</h3>
+                <div class="skills__responsive slide-in">
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>Responsive frontend</h3>
+                        </div>
+                    </div>
+    
+                    <div class="flex-row">
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_HTML5_BN_100x100_AJMA_20171230_1.0.png" alt="HTML5">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_Gulp_BN_100x100_AJMA_20171230_1.0.png" alt="Gulp">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_Polymer_BN_100x100_AJMA_20171230_1.0.png" alt="polymer">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_SASS_BN_100x100_AJMA_20171230_1.0.png" alt="SASS">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_CSS3_BN_100x100_AJMA_20171231_1.0.png" alt="CSS3">
+                            </figure>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex-row">
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_HTML5_BN_100x100_AJMA_20171230_1.0.png" alt="HTML5">
-                        </figure>
+                <div class="skills__agile slide-in">
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>Agile</h3>
+                        </div>
                     </div>
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_Gulp_BN_100x100_AJMA_20171230_1.0.png" alt="Gulp">
-                        </figure>
-                    </div>
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_Polymer_BN_100x100_AJMA_20171230_1.0.png" alt="polymer">
-                        </figure>
-                    </div>
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_SASS_BN_100x100_AJMA_20171230_1.0.png" alt="SASS">
-                        </figure>
-                    </div>
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_CSS3_BN_100x100_AJMA_20171231_1.0.png" alt="CSS3">
-                        </figure>
-                    </div>
-                </div>
-
-                <div class="flex-row">
-                    <div class="skills__info">
-                        <h3>Agile</h3>
+    
+                    <div class="flex-row">
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_Agile_BN_100x100_AJMA_20171230_1.0.png" alt="Agile">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_SCRUMT_BN_100_x100_AJMA_20171231_1.0.png" alt="Scrum">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_GTD_BN_100x100_AJMA_20171230_1.0.png" alt="GTD">
+                            </figure>
+                        </div>
+                        <div class="skills__item">
+                            <figure class="skills__logo">
+                                <img src="./images/Logo_TDD_BN_100x100_AJMA_20171230_1.0.png" alt="TDD">
+                            </figure>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex-row">
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_Agile_BN_100x100_AJMA_20171230_1.0.png" alt="Agile">
-                        </figure>
+                <div class="skills__others slide-in">
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>Otras habilidades</h3>
+                        </div>
                     </div>
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_SCRUMT_BN_100_x100_AJMA_20171231_1.0.png" alt="Scrum">
-                        </figure>
-                    </div>
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_GTD_BN_100x100_AJMA_20171230_1.0.png" alt="GTD">
-                        </figure>
-                    </div>
-                    <div class="skills__item">
-                        <figure class="skills__logo">
-                            <img src="./images/Logo_TDD_BN_100x100_AJMA_20171230_1.0.png" alt="TDD">
-                        </figure>
+                    <div class="flex-row">
+                        <div class="skills__info">
+    
+                        </div>
+                        <div class="skills__item-text">
+                            <p>PHP,
+                                <a href="https://wordpress.org/">Wordpress</a>,
+                                <a href="https://www.elegantthemes.com/gallery/divi/">Divi</a>,
+                                <a href="http://www.scriptcase.net/">Scriptcase</a>, Devopps, SEO, Arquitecturas de información, UX, Analythics, Test A/B</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="flex-row">
-                    <div class="skills__info">
-                        <h3>Otras habilidades</h3>
+                <div class="skills__personal slide-in">
+                    <div class="flex-row">
+                        <div class="skills__info">
+                            <h3>Personales</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="flex-row">
-                    <div class="skills__info">
-
+    
+                    <div class="flex-row">
+                        <div class="skills__item-text">
+                            <p>Dinámico, con espíritu creativo y emprendedor, metódico y organizado, usuario de
+                                <a href="https://gettingthingsdone.com/">GTD</a>&copy; desde hace más de 10 años, comunicativo y con capacidad de trabajar en equipo,
+                                Scrum, Personal & Team Coaching y PNL
+                                <p>Idiomas Español y Valenciano nativos e Inglés B1</p>
+                        </div>
+    
                     </div>
-                    <div class="skills__item-text">
-                        <p>PHP,
-                            <a href="https://wordpress.org/">Wordpress</a>,
-                            <a href="https://www.elegantthemes.com/gallery/divi/">Divi</a>,
-                            <a href="http://www.scriptcase.net/">Scriptcase</a>, Devopps, SEO, Arquitecturas de información, UX, Analythics, Test A/B</p>
-                    </div>
-                </div>
-
-                <div class="flex-row">
-                    <div class="skills__info">
-                        <h3>Personales</h3>
-                    </div>
-                </div>
-                <div class="flex-row">
-                    <div class="skills__item-text">
-                        <p>Dinámico, con espíritu creativo y emprendedor, metódico y organizado, usuario de
-                            <a href="https://gettingthingsdone.com/">GTD</a>&copy; desde hace más de 10 años, comunicativo y con capacidad de trabajar en equipo,
-                            Scrum, Personal & Team Coaching y PNL
-                            <p>Idiomas Español y Valenciano nativos e Inglés B1</p>
-                    </div>
-
                 </div>
             </div>
         </section>
-
-
 
         <!-- interest section -->
         <section id="interests" class="section-main-content__all-width-yellow--degree section-color">
@@ -434,7 +456,7 @@
                     <header class="section-header col-12">
                         <h2>Intereses</h2>
                     </header>
-                    <div class="interests__video">
+                    <div class="interests__video slide-in">
                         <video id="video" width="550" height="300" controls>
                             <source src="./video/batman.mp4" type="video/mp4">
                         </video>
@@ -445,63 +467,64 @@
 
 
         <!-- contact section -->
-        <section id="contact" class="section-main-content__all-width-yellow">
-            <div class="row">
-                <header class="section-header section-header--mod col-12">
-                    <h2>Comencemos a construir algo nuevo
-                        <br>
-                        <span style="color: white">Juntos</span>
-                    </h2>
-                    <p>Por favor, ponte en contacto conmigo y te contaré cómo puedo aportarte valor</p>
-                </header>
-                <div class="contact-form col-12">
-                    <form name="contact" method="GET">
-                        <div class="contact-form-row">
-                            <label>¿Cómo has contactado conmigo?</label>
-                        </div>
-                        <div class="contact-form-row-radio">
+        <section id="contact" class="section-main-content__all-width-yellow section-color">
+            <div class="contact__container">
+                <div class="row">
 
-                            <label for="contact-by-01">KeepCoding&copy;</label>
-                            <input type="radio" id="contact-by-01" name="contact-by" value="KeepCoding">
+                    <header class="section-header section-header--mod col-12">
+                        <h2>Comencemos a construir algo nuevo
+                            <br>
+                            <span style="color: white">Juntos</span>
+                        </h2>
+                        <p>Por favor, ponte en contacto conmigo y te contaré cómo puedo aportarte valor</p>
+                    </header>
 
-                            <label for="contact-by-02">Internet</label>
-                            <input type="radio" id="contact-by-02" name="contact-by" value="Internet">
+                    <div class="contact-form col-12">
+                        <form name="contact" method="GET">
+                            <div class="contact-form-row">
+                                <label>¿Cómo has contactado conmigo?</label>
+                            </div>
+                            <div class="contact-form-row-radio">
 
-                            <label for="contact-by-03">Redes socieales</label>
-                            <input type="radio" id="contact-by-03" name="contact-by" value="Redes sociales">
+                                <label for="contact-by-01">KeepCoding&copy;</label>
+                                <input type="radio" id="contact-by-01" name="contact-by" value="KeepCoding">
 
-                            <label for="contact-by-03">Networking</label>
-                            <input type="radio" id="contact-by-04" name="contact-by" value="Networking">
+                                <label for="contact-by-02">Internet</label>
+                                <input type="radio" id="contact-by-02" name="contact-by" value="Internet">
 
-                            <label for="contact-by-03">Otros medios</label>
-                            <input type="radio" id="contact-by-05" name="contact-by" value="Otros medios">
+                                <label for="contact-by-03">Redes socieales</label>
+                                <input type="radio" id="contact-by-03" name="contact-by" value="Redes sociales">
 
-                        </div>
-                        <div class="contact-form-row">
-                            <input type="text" name="name" placeholder="Nombre">
-                        </div>
+                                <label for="contact-by-03">Networking</label>
+                                <input type="radio" id="contact-by-04" name="contact-by" value="Networking">
 
-                        <div class="contact-form-row">
-                            <input type="email" name="email" placeholder="email">
-                        </div>
+                                <label for="contact-by-03">Otros medios</label>
+                                <input type="radio" id="contact-by-05" name="contact-by" value="Otros medios">
 
-                        <div class="contact-form-row">
-                            <input type="tel" name="phone" placeholder="Teléfono">
-                        </div>
+                            </div>
 
-                        <div class="contact-form-row">
-                            <textarea name="comments" rows="3" maxlength="200" name="message" placeholder="Mensaje"></textarea>
-                        </div>
+                            <div class="contact-form-row">
+                                <input type="text" name="name" placeholder="Nombre">
+                            </div>
 
+                            <div class="contact-form-row">
+                                <input type="email" name="email" placeholder="email">
+                            </div>
 
+                            <div class="contact-form-row">
+                                <input type="tel" name="phone" placeholder="Teléfono">
+                            </div>
 
+                            <div class="contact-form-row">
+                                <textarea name="comments" rows="3" maxlength="200" name="message" placeholder="Mensaje"></textarea>
+                            </div>
 
+                            <div class="contact-form-row-button">
+                                <button type="submit" id="enviar">Enviar</button>
+                            </div>
 
-                        <div class="contact-form-row-button">
-                            <button type="submit" id="enviar">Enviar</button>
-                        </div>
-
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -513,6 +536,7 @@
         <div class="main-footer__left">
             Web desarrollada por Antonio José Masiá bajo Licencia CC 4.0 by SA
         </div>
+
         <div class="main-footer__right">
             <div class="main-footer__social">
                 <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
@@ -525,7 +549,9 @@
         </div>
     </footer>
 
+    
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/asmoothScroll.js"></script>
 </body>
 
 </html>

@@ -12,9 +12,10 @@ function handler() {
 // navbar item click events listener
 menuItems.forEach( itemMenu => itemMenu.addEventListener('click', handler));
 
-// sliders
 
-// Debounce function
+
+
+// sliders
 function debounce(func, wait = 20, immediate = true) {
             
     var timeout;
@@ -42,7 +43,7 @@ const sliderItems = document.querySelectorAll('.slide-in');
 function checkSlide() {
     sliderItems.forEach( sliderItem => {
         
-        const slideInAt = ( window.scrollY + window.innerHeight ) - sliderItem.offsetHeight / 2 ;
+        const slideInAt = ( window.scrollY + window.innerHeight ) - sliderItem.offsetHeight / 2;
         
         const imageBottom = sliderItem.offsetTop + sliderItem.offsetHeight;
         
@@ -54,6 +55,8 @@ function checkSlide() {
         
         if ( isHalfShown && isNotScrolledPast ) {
             sliderItem.classList.add('active');
+        } else {
+            sliderItem.classList.remove('active');
         }
         
     });
