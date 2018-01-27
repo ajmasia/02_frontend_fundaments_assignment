@@ -50,7 +50,7 @@
 
 .timeline__marker:before {
   /* background: #FCD21D; */
-  border: 3px solid #FCD21D;
+  border: 3px solid #FFFFFF;
   border-radius: 100%;
   content: '';
   display: block;
@@ -65,7 +65,7 @@
 .timeline__marker:after {
   content: '';
   width: 1px;
-  background: rgb(185, 185, 185);
+  background: #FFFFFF;
   display: block;
   position: absolute;
   top: 26px;
@@ -78,7 +78,7 @@
 }
 
 .timeline__item:hover .timeline__marker:before {
-  background: #FCD21D;
+  background: #FFFFFF;
   border: 3px solid transparent;
 }
 

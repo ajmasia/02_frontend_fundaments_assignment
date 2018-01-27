@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/grid.css">
     <link rel="stylesheet" href="./styles/timeline.css">
-    <link rel="stylesheet" href="./styles/flexbox.css">
     <script src="./scripts/modernizr-custom.js"></script>
     <title>Sobre Antonio José Masiá</title>
 </head>
@@ -47,9 +46,9 @@
     </nav>
 
     <!-- header -->
-    <header id="home" class="main-header">
+    <header id="home" class="main-header fade-in">
 
-        <div class="main-header__image "></div>
+        <div class="main-header__image"></div>
 
         <div class="main-header__title-box">
             <h1>Antonio José Masiá</h1>
@@ -57,12 +56,31 @@
         </div>
 
         <div class="main-header__social">
-            <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
-            <img src="./images/iconmonstr-google-plus_494949.png" alt="Facebook">
-            <img src="./images/iconmonstr-instagram_494949.png" alt="Facebook">
-            <img src="./images/iconmonstr-pinterest_494949.png" alt="Facebook">
-            <img src="./images/iconmonstr-linkedin_494949.png" alt="Facebook">
-            <img src="./images/iconmonstr-github_494949.png" alt="Facebook">
+            
+            <a href="https://www.facebook.com/ajmasia">
+                <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
+            </a>
+            
+            <a href="https://plus.google.com/+AntonioJos%C3%A9Masi%C3%A1">
+                <img src="./images/iconmonstr-google-plus_494949.png" alt="Google+">
+            </a>
+
+            <a href="https://www.instagram.com/ajmasia/">
+                <img src="./images/iconmonstr-instagram_494949.png" alt="Instagram">
+            </a>
+
+            <a href="https://www.pinterest.es/ajmasia/">
+                <img src="./images/iconmonstr-pinterest_494949.png" alt="Pinterest">
+            </a>
+
+            <a href="https://www.linkedin.com/in/ajmasia/">
+                <img src="./images/iconmonstr-linkedin_494949.png" alt="LinkedIn">
+            </a>
+
+            <a href="https://github.com/ajmasia">
+                <img src="./images/iconmonstr-github_494949.png" alt="Github">
+            </a>
+            
         </div>
 
     </header>
@@ -80,19 +98,13 @@
                 </div>
                 <div class="row">
                     <article class="about-me-info">
+                        <!-- <figure class="about-me-info__logo slide-in"> -->
                         <figure class="about-me-info__logo slide-in">
                             <img src="./images/Imagen_Portada_AJMA_20171220_1.0.jpg" alt="Antonio José Masiá">
                         </figure>
                         <p>Curioso, activo y apasionado del aprendizaje. Me gusta afrontar nuevos retos, de ahí que el desarrollo
                             de software me resulte gratificante, ya que cada nuevo proyecto me ofrece una nueva oportunidad
                             de ponerme a prueba y sobre todo aprender cosas diferentes.</p>
-
-
-                        <!-- <p>Creo firmemente que el conocimiento debe estar al alcance de cualquier persona, y por esta razón, me gusta compartir en mi blog personal todo aquello que aprendo.</p>
-                            
-                            <p>Me encantan los gadgets, cacharrear con ellos y sacarles punta. Sí, ya lo sé, soy un poco friki (no soy perfecto). Siempre llevo un libro a cuestas y cuando puedo, aprovecho para sacarle jugo.</p>
-                            
-                            <p>Entre mis aficiones está el cine, las series, la música, el deporte y sobre todo viajar. Me encanta conocer culturas diferentes.</p> -->
                     </article>
                 </div>
             </div>
@@ -149,7 +161,7 @@
         </section>
 
         <!-- profesional experience section -->
-        <section id="experience" class="section-main-content">
+        <section id="experience" class="section-main-content__all-width-yellow section-color-experience">
             <div class="experience__container">
                 <div class="row">
                     <header class="section-header col-12">
@@ -450,7 +462,7 @@
         </section>
 
         <!-- interest section -->
-        <section id="interests" class="section-main-content__all-width-yellow--degree section-color">
+        <section id="interests" class="section-main-content__all-width-yellow section-color">
             <div class="interests__container">
                 <div class="row">
                     <header class="section-header col-12">
@@ -467,60 +479,59 @@
 
 
         <!-- contact section -->
-        <section id="contact" class="section-main-content__all-width-yellow section-color">
+        <section id="contact" class="section-main-content__all-width-yellow section-color-form">
             <div class="contact__container">
                 <div class="row">
 
                     <header class="section-header section-header--mod col-12">
                         <h2>Comencemos a construir algo nuevo
-                            <br>
                             <span style="color: white">Juntos</span>
                         </h2>
                         <p>Por favor, ponte en contacto conmigo y te contaré cómo puedo aportarte valor</p>
                     </header>
 
-                    <div class="contact-form col-12">
-                        <form name="contact" method="GET">
+                    <div class="contact-form col-12 slide-in">
+                        <form name="contact" method="GET" novalidate>
                             <div class="contact-form-row">
                                 <label>¿Cómo has contactado conmigo?</label>
                             </div>
                             <div class="contact-form-row-radio">
 
                                 <label for="contact-by-01">KeepCoding&copy;</label>
-                                <input type="radio" id="contact-by-01" name="contact-by" value="KeepCoding">
+                                <input type="radio" id="contact-by-01" name="contact-by" value="KeepCoding" required>
 
                                 <label for="contact-by-02">Internet</label>
-                                <input type="radio" id="contact-by-02" name="contact-by" value="Internet">
+                                <input type="radio" id="contact-by-02" name="contact-by" value="Internet" required>
 
                                 <label for="contact-by-03">Redes socieales</label>
-                                <input type="radio" id="contact-by-03" name="contact-by" value="Redes sociales">
+                                <input type="radio" id="contact-by-03" name="contact-by" value="Redes sociales" required>
 
-                                <label for="contact-by-03">Networking</label>
-                                <input type="radio" id="contact-by-04" name="contact-by" value="Networking">
+                                <label for="contact-by-04">Networking</label>
+                                <input type="radio" id="contact-by-04" name="contact-by" value="Networking" required>
 
-                                <label for="contact-by-03">Otros medios</label>
-                                <input type="radio" id="contact-by-05" name="contact-by" value="Otros medios">
+                                <label for="contact-by-05">Otros medios</label>
+                                <input type="radio" id="contact-by-05" name="contact-by" value="Otros medios" required>
 
                             </div>
 
                             <div class="contact-form-row">
-                                <input type="text" name="name" placeholder="Nombre">
+                                <input type="text" name="name" placeholder="Nombre" id="name" required>
                             </div>
 
                             <div class="contact-form-row">
-                                <input type="email" name="email" placeholder="email">
+                                <input type="email" name="email" placeholder="email" id="email" required>
                             </div>
 
                             <div class="contact-form-row">
-                                <input type="tel" name="phone" placeholder="Teléfono">
+                                <input type="tel" name="phone" placeholder="Teléfono" id="phone" required>
                             </div>
 
                             <div class="contact-form-row">
-                                <textarea name="comments" rows="3" maxlength="200" name="message" placeholder="Mensaje"></textarea>
+                                <textarea rows="3" maxlength="200" name="message" placeholder="Mensaje" id="message" required></textarea>
                             </div>
 
                             <div class="contact-form-row-button">
-                                <button type="submit" id="enviar">Enviar</button>
+                                <button type="submit" id="send">Enviar</button>
                             </div>
 
                         </form>
@@ -532,26 +543,44 @@
     </main>
 
     <!-- footer -->
-    <footer class="main-footer">
+    <footer id="main-footer" class="main-footer">
         <div class="main-footer__left">
-            Web desarrollada por Antonio José Masiá bajo Licencia CC 4.0 by SA
+            Web desarrollada por Antonio José Masiá bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/">Licencia CC 4.0 by SA</a>
         </div>
 
         <div class="main-footer__right">
             <div class="main-footer__social">
-                <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
-                <img src="./images/iconmonstr-google-plus_494949.png" alt="Google+">
-                <img src="./images/iconmonstr-instagram_494949.png" alt="nstagram">
-                <img src="./images/iconmonstr-pinterest_494949.png" alt="Pinterest">
-                <img src="./images/iconmonstr-linkedin_494949.png" alt="LinkedIn">
-                <img src="./images/iconmonstr-github_494949.png" alt="GitHUB">
+                    <a href="https://www.facebook.com/ajmasia">
+                        <img src="./images/iconmonstr-facebook_494949.png" alt="Facebook">
+                    </a>
+                    <a href="https://plus.google.com/+AntonioJos%C3%A9Masi%C3%A1">
+                        <img src="./images/iconmonstr-google-plus_494949.png" alt="Google+">
+                    </a>
+
+                    <a href="https://www.instagram.com/ajmasia/">
+                        <img src="./images/iconmonstr-instagram_494949.png" alt="Instagram">
+                    </a>
+        
+                    <a href="https://www.pinterest.es/ajmasia/">
+                        <img src="./images/iconmonstr-pinterest_494949.png" alt="Pinterest">
+                    </a>
+        
+                    <a href="https://www.linkedin.com/in/ajmasia/">
+                        <img src="./images/iconmonstr-linkedin_494949.png" alt="LinkedIn">
+                    </a>
+        
+                    <a href="https://github.com/ajmasia">
+                        <img src="./images/iconmonstr-github_494949.png" alt="Github">
+                    </a>
             </div>
         </div>
     </footer>
 
     
+    <!-- <script src="./scripts/scripts.js"></script> -->
+
     <script src="./scripts/scripts.js"></script>
-    <script src="./scripts/asmoothScroll.js"></script>
+    <script src="./scripts/form.js"></script>
 </body>
 
 </html>
