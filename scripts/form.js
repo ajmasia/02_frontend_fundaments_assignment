@@ -27,7 +27,7 @@ form.addEventListener('submit', function (event) {
     }
 
     if ( nameInput.checkValidity() === false ) {
-        alert('Tienes que escribir tu nombre');
+        alert('Por favor, escribe tu nombre');
         nameInput.focus();
         event.preventDefault();
         return false;
@@ -37,7 +37,7 @@ form.addEventListener('submit', function (event) {
     var resultEmailValidation = regex.test(emailInput.value);
 
   if (resultEmailValidation === false) {
-        alert("Tienes que escribir un email correcto");
+        alert("por favor, escribe un mail correcto");
         emailInput.focus();
         event.preventDefault();
         return false;
@@ -47,7 +47,7 @@ form.addEventListener('submit', function (event) {
     var resultPhoneValidation = regex.test(phoneInput.value);
 
     if (resultPhoneValidation === false) {
-        alert("El formato del número de teléfono es incorrecto");
+        alert("Por favor, escribe tu número de teléfono de forma correcta en formato +00 000 000 000");
         phoneInput.focus();
         event.preventDefault();
         return false;

@@ -61,7 +61,7 @@
 }
 
 .col-12 {
-    /* float: left; */
+    float: left;
     width: calc(calc(100% / 12) * 12);
 }
 
