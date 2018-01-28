@@ -58,7 +58,7 @@ function scrollToElement(element) {
         element.lastJump = Math.abs(jump) ;
         setTimeout(function () {
             scrollToElement(element);
-        }, 25);
+        }, 35);
     } else {
         element.lastJump = null;
     }
@@ -134,7 +134,6 @@ window.addEventListener('scroll', changeMenuStyle);
 
 
 // Horizontal elements slider script
-
 //Debounce funtion
 function debounce(func) {
     var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 20;
@@ -175,17 +174,12 @@ function checkSlide() {
 
         if (isHalfShown && isNotScrolledPast) {
             sliderItem.classList.add('active');
-        } else {
-            sliderItem.classList.remove('active');
-        }
-
-        /* If you want only one animation remove else stament { sliderItem.classList.remove('active'); } */
+        } /* If you always want animation add else stament { sliderItem.classList.remove('active'); } */
     });
 }
 
 // Add an event lister for detect scroll changes for sliders
 window.addEventListener('scroll', debounce(checkSlide));
-
 
 
 // Notification functions

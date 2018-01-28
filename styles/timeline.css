@@ -1,3 +1,4 @@
+/* Timeline styles*/
 .timeline__list h1,
 .timeline__list h2,
 .timeline__list h3,
@@ -36,9 +37,6 @@
 .timeline__content h3 {
   margin-top: 0;
 }
-
-
-/* marker */
 
 .timeline__marker {
   position: absolute;

@@ -12,6 +12,10 @@ function getData() {
         var children = "";
         response.forEach(element => {
         children += '<p>' + element.name + '</p>';
+        children += '<p>' + element.email + '</p>';
+        children += '<p>' + element.phone + '</p>';
+        children += '<p>' + element.message + '</p>';
+        children += '<p>' + element.contact + '</p></br>';
     
     });
 
@@ -21,18 +25,14 @@ function getData() {
   });
 }
 
-// createData function
-function createData() {
-    var data = {
-        name: "Ismael"
-    };
-    
+// CreateData function
+function createData(data) {
     makeRequest('POST', 'http://localhost:8000/api/task', data, function() {
         console.log("Datos creados correctamente");
     });
 }
 
-// makeRequest function
+// MakeRequest function
 function makeRequest(method, url, body, callbackSuccess) {
     var xhr = new XMLHttpRequest();
 
