@@ -59,9 +59,18 @@ form.addEventListener('submit', function (event) {
 
     // Message input validate
     var messageInputValue = document.getElementById('message').value;
-
+    
     if ( messageInput.checkValidity() === false || wordCounter(messageInputValue) === null ) {
+        console.log(wordCounter(messageInputValue));
         alert('No has escrito nada en el campo mensaje');
+        messageInput.focus();
+        event.preventDefault();
+        return false;
+    }
+
+    if ( messageInput.checkValidity() === false || wordCounter(messageInputValue) > 150 ) {
+        console.log(wordCounter(messageInputValue));
+        alert('No puedes escribir más de 150 palabras en el campo mensaje');
         messageInput.focus();
         event.preventDefault();
         return false;
